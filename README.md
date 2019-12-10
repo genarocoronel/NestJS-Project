@@ -7,11 +7,15 @@ Basic NestJS backend to be used as a starting point.
 
 ## Installation
 
+Run commands under /server for now.
+
 ```bash
 $ npm install
 ```
 
 ## Running the app
+
+Run commands under /server for now.
 
 ```bash
 # development
@@ -24,7 +28,11 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+The app is available at `http://localhost:3000/`
+
 ## Test
+
+Run commands under /server for now.
 
 ```bash
 # unit tests
@@ -39,4 +47,6 @@ $ npm run test:cov
 
 ## License
 
-  Nest is [MIT licensed](LICENSE).
+Code released under the [Apache License, Version 2.0](LICENSE).
+
+Nest is [MIT licensed](LICENSE).

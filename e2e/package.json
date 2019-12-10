@@ -1,0 +1,22 @@
+{
+  "name": "minimal-nestjs-boilerplate",
+  "version": "1.0.0",
+  "description": "Basic NestJS backend to be used as a starting point.",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^13.1.0",
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node e2e/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreshworksStudio/minimal-nestjs-boilerplate.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/FreshworksStudio/minimal-nestjs-boilerplate/issues"
+  }
+}
