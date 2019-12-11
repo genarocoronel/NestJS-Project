@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  ####################### Database Definition #######################
+  database:
+    container_name: database
+    build:
+      context: database
+    ports:
+      - 5435:5432
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=sample_db
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - default
+
+####################### Networks Definition #######################
+networks:
+  default:
+    driver: bridge
+
+####################### Volumes Definition #######################
+volumes:
+  postgres-data:

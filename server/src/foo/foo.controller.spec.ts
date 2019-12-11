@@ -1,6 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { FooController } from './foo.controller';
 import { FooService } from './foo.service';
+import { Foo } from './foo.entity';
 
 describe('Foo Controller', () => {
   let controller: FooController;
@@ -19,8 +20,8 @@ describe('Foo Controller', () => {
   });
 
   describe('foo', () => {
-    it('should return "Hello Foo!"', () => {
-      expect(controller.getHello()).toBe('Hello Foo!');
+    it('should return empty list', () => {
+      expect(controller.findAll()).toBe([] as Foo[]);
     });
   });
 });
