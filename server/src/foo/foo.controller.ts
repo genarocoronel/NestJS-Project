@@ -7,7 +7,8 @@ export class FooController {
   constructor(private readonly fooService: FooService) {}
 
   @Get()
-  findAll(): Promise<Foo[]> {
-    return this.fooService.findAll();
+  async findAll(): Promise<Foo[]> {
+    let res = await this.fooService.findAll();
+    return res;
   }
 }

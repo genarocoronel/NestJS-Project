@@ -16,8 +16,9 @@ import { FooModule } from './foo/foo.module';
       database: 'sample_db',
       entities: [Foo],
       synchronize: true,
+      keepConnectionAlive: true,
     }),
-    FooModule
+    FooModule,
   ],
   controllers: [AppController],
   providers: [AppService],
